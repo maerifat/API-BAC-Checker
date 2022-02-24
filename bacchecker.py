@@ -99,7 +99,7 @@ all_tokens= json_file['tokens']
 
 #tokens validation check fuction
 def token_validation(token):
-    url= "https://stage-api.whjr.one/api/V1/userDetail/me"
+    url= "https://stage-api.xxx.one/api/V1/userDetail/me"
     method= "get"
     body= {"age":"22"}
     headers= {"Authorization": "Bearer " +token}
