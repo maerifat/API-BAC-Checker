@@ -16,7 +16,7 @@ from yaml import tokens
 
 #arguments
 print(Fore.YELLOW)
-parser = argparse.ArgumentParser(description='IDOR Automation Tool by WhitehatJr Security Team. Configure your yaml file as required to work with this tool.',epilog='Use responsibly, Enjoy pentesting')
+parser = argparse.ArgumentParser(description='IDOR Automation Tool by XXXXX Security Team. Configure your yaml file as required to work with this tool.',epilog='Use responsibly, Enjoy pentesting')
 parser.add_argument('-v', '--version', action='version', version='v1')
 parser.add_argument('-gc', '--gen-config', action='store_true', help='Use this to generate new configuration file in case the older one is corrupted.')
 #parser.add_argument('-cf', '--config_file', action='store',   help='provide other configuration file than default.')
@@ -141,7 +141,7 @@ token_number=0
 while token_number < total_tokens:  
     token_value= list(all_tokens.values())[token_number]
     token_name= list(all_tokens.keys())[token_number]
-    test_url= "https://stage-api.whjr.one/api/V1/bookings/students/42e0723a-cea3-4ff5-b41e-2f563b7c29b3/getClasses"
+    test_url= "https://stage-api.xxxx.one/api/V1/bookings/students/42e0723a-cea3-4ff5-b41e-2f563b7c29b3/getClasses"
     test_method= "get"
     test_body= {"age":"22"}
     test_headers= {"Authorization": "Bearer " + token_value}
